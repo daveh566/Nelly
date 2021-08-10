@@ -10,9 +10,9 @@ async def bot(client, message):
     if msg.startswith("/") or msg.startswith("@"):
         message.continue_propagation()
     if chat_id in en_chats:
-        aura = msg
-        aura = aura.replace("Nelly", "Aco")
-        aura = aura.replace("Nelly", "Aco")
+        aspirer = msg
+        aspirer = aspirer.replace("Nelly", "Aco")
+        aspirer = aspirer.replace("Nelly", "Aco")
         querystring = {
             "bid": "178",
             "key": "sX5A2PcYZbsN5EY6",
@@ -30,8 +30,8 @@ async def bot(client, message):
         result = result.replace("Aco", "Nelly")
         result = result.replace("Eliza", "@NellyVBot")
         result = result.replace("Hi~", "Hello Friend I Am @NellyVbot")
-        result = result.replace("My dear great botmaster, Nellybot Team.", "Made By @KayAspirerProject")
-        result = result.replace("Have the control right.", "My Father Is @aspirer2")
+        result = result.replace("My dear great botmaster, @KayAspirerProject Nellybot Team.", "I was created by @Techno_Ocean Team")
+        result = result.replace("Have the control right.", "My Father Is @madepranav")
         result = result.replace("I was created by @KayAspirerProject Team.", "I was created by @Techno_Ocean Team.")
         result = result.replace("<a href=\\", "<a href =")
         result = result.replace("<\/a>", "</a>")
@@ -70,17 +70,17 @@ async def bot(client, message):
         else:
             rm = msg
             lan = translator.detect(rm)
-        aura = rm
+        aspirer = rm
         if not "en" in lan and not lan == "":
-            aura = translator.translate(aura, lang_tgt="en")
+            aspirer = translator.translate(aspirer, lang_tgt="en")
 
-        aura = aura.replace("Nelly", "Aco")
-        aura = aura.replace("Nelly", "Aco")
+        aspirer = aspirer.replace("Nelly", "Aco")
+        aspirer = aspirer.replace("Nelly", "Aco")
         querystring = {
             "bid": "178",
             "key": "sX5A2PcYZbsN5EY6",
             "uid": "mashape",
-            "msg": {aura},
+            "msg": {aspirer},
         }
         headers = {
             "x-rapidapi-key": "cf9e67ea99mshecc7e1ddb8e93d1p1b9e04jsn3f1bb9103c3f",
@@ -166,7 +166,7 @@ async def bot(client, message):
     result = result.replace("Aco", "Nelly")
     result = result.replace("Eliza", "@NellyVBot")
     result = result.replace("Hi~", "Hello Friend I Am @NellyVBot")
-    result = result.replace("My dear great botmaster, Nellybot Team.", "Made By @madepranav")
+    result = result.replace("My dear great botmaster, @KayAspirerProject Nellybot Team.", "Made By @madepranav")
     result = result.replace("Have the control right.", "My Father Is @madepranav")
     result = result.replace("I was created by Nellybot Team.", "I was created by @Techno_Ocean Team.")
     result = result.replace("<a href=\\", "<a href =")
@@ -245,7 +245,7 @@ async def aspirerbeen(client, message):
     result = result.replace("Aco", "Nelly")
     result = result.replace("Eliza", "@NellyVBot")
     result = result.replace("Hi~", "Hello Friend I Am @NellyVBot")
-    result = result.replace("My dear great botmaster, Nellybot Team.", "Made By @madepranav")
+    result = result.replace("My dear great botmaster, @KayAspirerProject Nellybot Team.", "Made By @madepranav")
     result = result.replace("Have the control right.", "My Father Is @madepranav")
     result = result.replace("I was created by Nellybot Team.", "I was created by @Techno_Ocean Team.")
     result = result.replace("<a href=\\", "<a href =")
