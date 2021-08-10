@@ -13,4 +13,4 @@ async def info(client, message):
         InlineKeyboardButton(
             "👸🏼 Add Nelly to your group",
             url=f"https://telegram.me/nellyvbot?startgroup=true",
-        await BOT.send_message(chat_id = message.chat.id, text = BOT_START, reply_markup = InlineKeyboardMarkup(buttons))
+        await bot.send_message(chat_id = message.chat.id, text = BOT_START, reply_markup = InlineKeyboardMarkup(buttons))
