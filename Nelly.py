@@ -3,7 +3,7 @@ import re
 from asyncio import (gather, get_event_loop, sleep)
 
 from aiohttp import ClientSession
-from pyrogram import filters
+from pyrogram import Client filters
 from Python_ARQ import ARQ
 
 from config import bot, BOT_TOKEN, ARQ_API_KEY, ARQ_API_BASE_URL, LANGUAGE
